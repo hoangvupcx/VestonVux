@@ -168,7 +168,6 @@ ul.menu > li:not(:first-child) > a:hover {
 
 /*Collection*/
 .collection-banner {
-    padding-top: 5px;
     position: relative;
 }
 .collection-banner img{
