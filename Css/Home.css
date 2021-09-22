@@ -749,7 +749,7 @@ div.item-footer p {
     ul.menu-product {
         padding-left: 20px;
     }
-    .new > h3, div.header-product > p {
+    div.header-product > p {
         font-size:  50px;
     }
     .carousel-control-prev, .carousel-control-next {
@@ -796,7 +796,7 @@ div.item-footer p {
         font-size: 20px;
     }
     .holiday-wedding input {
-        padding: 8px 10px;
+        padding: 8px !important;
         width: 140px;
         font-size: 16px;
     }
@@ -885,6 +885,12 @@ div.item-footer p {
     }
     .content-collection a {
         font-size: 18px;
+    }
+    .holiday-wedding input {
+        padding: 10px !important;
+    }
+    .menu-collection {
+        font-size: 16px !important;   
     }
 }
 @media screen and (max-width: 750px) /*250%*/ {
@@ -1399,7 +1405,7 @@ div.item-footer p {
         line-height: 0px;
     }
     .holiday-wedding input {
-        padding: 4px;
+        padding: 10px;
         width: 80px;
         font-size: 8px;
         margin-left: 10px;
@@ -1505,7 +1511,6 @@ div.item-footer p {
         font-size: 8px;
     }
     .holiday-wedding input {
-        padding: 3px;
         width: 65px;
     }
 /*-------------------End Home------------------------*/
