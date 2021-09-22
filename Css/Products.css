@@ -59,7 +59,7 @@ div.text-product p:first-child {
 .end hr {
     width: 17%;
     border-top: 2px solid #0e0d0d;
-    margin-top: 0;
+    margin: 0 auto;
 }
 .menu-product > li > a, pre {
     color: #666;

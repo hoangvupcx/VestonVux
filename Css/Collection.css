@@ -14,7 +14,7 @@
 }
 
 .collection-item-2 img {
-    width: 30%;
+    width: 60%;
 }
 .collection-item-2 {
     display: flex;
@@ -85,6 +85,85 @@ div.text-item-1 {
     border: none;
     transform: scale(1.1);
 }
+.show {
+    position: relative;
+}
+.show img {
+    width: 100%;
+}
+.caption-show-1st, .caption-show-2nd {
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.caption-show-1st {
+    top: 30%;
+}
+.show h1 {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: -4px;
+}
+.show h3 {
+    font-size: 40px;    
+}
+.caption-show-2nd {
+    top: 60%;
+}
 .spacer {
     padding-top: 75px;
+}
+
+
+.banner-wedding {
+    position: relative;
+}
+.banner-wedding img {
+    width: 100%;
+}
+.caption-wedding, .text-wedding {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
+}
+.caption-wedding {
+    top: 10%;
+    color: white;
+}
+.text-wedding {
+    top: 80%;
+    color: white;
+}
+.caption-wedding h1 {
+    font-size: 100px;
+    margin: -10px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 2px black;
+}
+.caption-wedding h2 {
+    font-size: 60px;
+    text-shadow: 2px 1px 2px black;
+}
+.text-wedding h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: -5px;
+    text-shadow: 2px 1px 2px black;
+}
+.text-wedding h3 {
+    text-shadow: 1px 1px 1px white;
+}
+.title {
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: Questrial, sans-serif;
+    font-size: 20px;
+}
+.title > h3 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 50px;
 }
