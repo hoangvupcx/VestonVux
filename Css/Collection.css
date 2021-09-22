@@ -12,14 +12,6 @@
 .collection-item-1 {
     position: relative;
 }
-
-.collection-item-2 img {
-    width: 60%;
-}
-.collection-item-2 {
-    display: flex;
-    padding: 30px 0 0 0;
-}
 div.text-item-1 {
     position: absolute;
     color: white;
@@ -35,6 +27,15 @@ div.text-item-1 {
 .text-item-1 p {
     font-size: 25px;
 }
+
+.collection-item-2 img {
+    width: 60%;
+}
+.collection-item-2 {
+    display: flex;
+    padding: 30px 0 0 0;
+}
+
 .text-item-2 {
     text-align: center;
     padding: 7%;
@@ -117,6 +118,7 @@ div.text-item-1 {
 }
 
 
+/*---------------Wedding---------------*/
 .banner-wedding {
     position: relative;
 }
@@ -166,4 +168,34 @@ div.text-item-1 {
     padding-top: 10px;
     margin: 0;
     font-size: 50px;
+}
+
+
+
+
+
+/*-----------------Holiday------------------*/
+.banner-holiday {
+    position: relative;
+}
+.banner-holiday img {
+    width: 100%;
+}
+.container-holiday {
+    position: absolute;
+    width: 40%;
+    top: 25%;
+    color: white;
+    margin-left: 5%;
+    text-shadow: 1px 1px 1px black;
+}
+.caption-holiday h2 {
+    font-size: 50px;
+}
+.text-holiday p {
+    font-size: 18px;
+}
+.title {
+    width: 80%;
+    margin:  auto ;
 }
