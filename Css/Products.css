@@ -1,3 +1,8 @@
+* {
+    font-family: Questrial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 div.header-product {
     height: 500px;
     background-image: url(https://images.unsplash.com/photo-1629532599813-141ef98cc1a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
@@ -8,7 +13,6 @@ div.header-product {
     align-items: center;
 }
 div.header-product > p {
-    font-family: Questrial, sans-serif;
     font-size: 75px;
     background-color: transparent; /* Nền trong suốt*/
     color: white;
@@ -61,6 +65,19 @@ div.text-product p:first-child {
     border-top: 2px solid #0e0d0d;
     margin: 0 auto;
 }
+.menu-product {
+    display: flex;
+    list-style-type: none;
+    margin-bottom: 0;
+    align-items: center;
+}
+.menu-product > li {
+    position: relative;
+    margin: 5px 0;
+}
+.menu-product > li:last-child {
+    width: 100%;
+}
 .menu-product > li > a, pre {
     color: #666;
     font-size: 20px;
@@ -78,11 +95,6 @@ div.text-product p:first-child {
 .menu-product > li > a:hover {
     color: black;
     transform: scale(1.2);
-}
-.menu-product {
-    display: flex;
-    list-style-type: none;
-    margin-bottom: 0;
 }
 ::-webkit-scrollbar { /* Xóa mép thanh scroll */
     width: 10px;
@@ -116,6 +128,76 @@ div.text-product p:first-child {
     clear: left;
     display: none;
 }
+
+
+
+/*------------Products----------*/
+.suits, .blazers {
+    position: relative;
+}
+.suits-wrapper video, .blazers-wrapper img{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.suits-content, .blazers-content {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 35%;
+    color: white ;
+}
+.tuxedos-content {
+    align-items: center !important;
+}
+h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 4px;
+}
+h5 {
+    text-shadow: 1px 1px 1px black;
+    letter-spacing: 2px;
+}
+.btn-products input {
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 200px;
+    letter-spacing: 1px;
+    border: 1.5px solid white;
+    transition: all 0.75s;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+.btn-products input:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transform: scale(1.1);
+    text-shadow: none;
+}
+.btn-side-by-side input {
+    background-color: transparent;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 200px;
+    letter-spacing: 1px;
+    border: 1.5px solid black;
+    transition: all 0.75s;
+    border-radius: 5px;
+    color: black;
+}
+.btn-side-by-side input:hover {
+    background-color: black;
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
 
 
 

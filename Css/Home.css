@@ -47,18 +47,6 @@ ul.menu > li:not(:first-child) > a:hover {
 .logo img {
     width: 100%;
 }
-.head-text {
-    text-align: center;
-    font-family: Questrial, sans-serif;
-    letter-spacing: 1px;
-}
-.head-text h1 {
-    margin: 3% 0 1.5% 0;
-    font-weight: bolder;
-}
-.head-text p {
-    margin-bottom: 2%;
-}
 
 /*demo1*/
 .start-demo1 h4, .start-demo2 h4 {
@@ -414,8 +402,47 @@ input.button:hover {
 
 
 
-
-
+/*--------------------------Search Box------------------*/
+.search-box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 40px;
+    background: red;
+    padding: 10px;
+    height: 60px;
+    left: 65%;
+}
+.search-txt {
+    background: none;
+    float: left;
+    padding-right: 50px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 17px;
+    height: 40px;
+    width: ;
+    transition: all 0.4s;
+    line-height: 40px;
+}
+.search-box:hover > .search-txt {
+    width: 400px;
+    padding: 0 6px;
+}
+.search-box:hover {
+    background: green;
+}
+.search-btn {
+    float: right;
+    color: black;
+    height: 100%;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
 
 /*--------------------------------Carousel------------------------------*/
@@ -644,6 +671,27 @@ div.item-footer p {
 
 /*------------------------MEDIA QUERY------------------------------*/
 @media screen and (max-width: 1050px) /*150%*/ {
+    /*--------------Search box---------------*/
+    .search-btn {
+        width: 25px;
+    }
+    .search-box {
+        height: 40px;
+        left: 55%;
+    }
+    .search-txt {
+        height: 100%;
+        font-size: 13px;
+    }
+    .search-box:hover > .search-txt {
+        width: 250px;
+    }
+
+
+
+
+
+
     /*---------------Newletter---------------*/
     .inputEmail, .submit {
         width: 300px;
@@ -726,7 +774,7 @@ div.item-footer p {
     .new > h3 {
         font-size: 30px !important;
     }
-    .new > p, div.text-product p, p.collection {
+    .new > p, div.text-product p, p.collection, .title > p {
         font-size: 60%;
     }
     .add-to-bag {
@@ -739,17 +787,17 @@ div.item-footer p {
     p.collection {
         padding-top: 5px;
     }
-    .menu-product > li > a, pre{
+    .menu-product > li > a, pre, .menu-collection > li > a {
         font-size: 70%;
         padding: 8px;
     }
     div.text-product pre {
         font-size: 60%;
     }
-    ul.menu-product {
+    ul.menu-product, .menu-collection {
         padding-left: 20px;
     }
-    .new > h3, div.header-product > p {
+    div.header-product > p {
         font-size:  50px;
     }
     .carousel-control-prev, .carousel-control-next {
@@ -769,10 +817,7 @@ div.item-footer p {
         font-size: 20px;
         padding: 10px;
     }
-    .head-text h1 {
-        font-size: 30px;
-    }
-    .head-text p, .carousel-inner p, .item-text pre {
+    .carousel-inner p, .item-text pre {
         font-size: 0.75rem;
     }
     .carousel-inner p:last-child {
@@ -796,9 +841,12 @@ div.item-footer p {
         font-size: 20px;
     }
     .holiday-wedding input {
-        padding: 8px 10px;
+        padding: 8px !important;
         width: 140px;
         font-size: 16px;
+    }
+    .title > h3 {
+        font-size: 30px !important;
     }
     /*------------------- End Home & Products-----------------*/
 
@@ -855,6 +903,28 @@ div.item-footer p {
     }
 }
 @media screen and (max-width: 800px) /*200%*/ {
+    /*--------------Search box---------------*/
+    .search-btn {
+        font-size: 10px;
+    }
+    .search-box {
+        height: 30px;
+        left: 75%;
+        width: 300px;
+    }
+    .search-txt {
+        height: 100%;
+        font-size: 10px;
+        width: 200px;
+    }
+    .search-box:hover > .search-txt {
+        width: 200px;
+    }
+
+
+
+
+
     ul.menu > li:not(:first-child) > a {
         font-size: 15px;
     }
@@ -885,6 +955,15 @@ div.item-footer p {
     }
     .content-collection a {
         font-size: 18px;
+    }
+    .holiday-wedding input {
+        padding: 10px !important;
+    }
+    .menu-collection {
+        font-size: 16px !important;   
+    }
+    .title > p {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 750px) /*250%*/ {
@@ -992,8 +1071,11 @@ div.item-footer p {
     div.header-product {
         height: 150px;
     }
-    .new > h3 {
+    .new > h3, .title > h3 {
         font-size: 25px !important;
+    }
+    title > p {
+        font-size: 10px !important;
     }
     p.collection {
         padding-top: 5px;
@@ -1001,7 +1083,7 @@ div.item-footer p {
     ul.menu-product {
         padding-left: 10px;
     }
-    .new > h3, div.header-product > p {
+    div.header-product > p {
         font-size:  30px;
     }
     .carousel-control-prev, .carousel-control-next {
@@ -1017,10 +1099,7 @@ div.item-footer p {
     dl, ol, ul {
         margin-bottom: 5px;
     }
-    .head-text h1 {
-        font-size: 30px;
-    }
-    .head-text p, .carousel-inner p, .item-text pre {
+    .carousel-inner p, .item-text pre {
         font-size: 12px;
     }
     .carousel-inner p:last-child {
@@ -1207,15 +1286,18 @@ div.item-footer p {
         font-size: 15px !important;
         margin: 5px 0 !important;
     }
+    .title > h3 {
+        font-size: 20px !important;
+    }
+    .title > p {
+        font-size: 12px;
+    }
     p.collection {
         padding-top: 5px;
     }
-    .menu-product > li > a {
+    .menu-product > li > a, .menu-collection > li > a{
         font-size: 60%;
         padding: 5px;
-    }
-    .new > h3 {
-        font-size: 25px;
     }
     .carousel-indicators li {
         width: 25px;
@@ -1224,10 +1306,6 @@ div.item-footer p {
     }
     dl, ol, ul {
         margin-bottom: 0px;
-    }
-    .head-text h1 {
-        font-size: 20px;
-        margin: 1.5% 0px 1%;
     }
     /*-------------------End Home & Products------------------------*/
     
@@ -1399,14 +1477,19 @@ div.item-footer p {
         line-height: 0px;
     }
     .holiday-wedding input {
-        padding: 4px;
+        padding: 10px;
         width: 80px;
         font-size: 8px;
         margin-left: 10px;
         margin-top: 10px;
         border: 0.5px solid black;
     }
-    
+    .title > h3 {
+        font-size: 15px !important;
+    }
+    .title > p {
+        font-size: 8px !important;
+    }
 }
 @media screen and (max-width: 360px) /*500%*/ {
     /*---------------Newletter---------------*/
@@ -1474,9 +1557,6 @@ div.item-footer p {
     .carousel-caption h1{
 		font-size: 1rem;
 	}
-    .title-header {
-        font-size: 12px !important;
-    }
 	.carousel-caption h3.demo{		
 		font-size: 5px;	
         letter-spacing: 0.5px;
@@ -1495,7 +1575,7 @@ div.item-footer p {
     .start-demo1 > a, .start-demo2 > a, .button-demo3 {
         font-size: 0.2rem;
     }
-    .head-text p, .carousel-inner p, .item-text pre {
+    .carousel-inner p, .item-text pre {
         font-size: 5px;
     }
     .content-collection h4 {
@@ -1505,7 +1585,6 @@ div.item-footer p {
         font-size: 8px;
     }
     .holiday-wedding input {
-        padding: 3px;
         width: 65px;
     }
 /*-------------------End Home------------------------*/

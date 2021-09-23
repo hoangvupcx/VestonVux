@@ -172,6 +172,8 @@ h5 {
     letter-spacing: 1px;
     font-family: Questrial, sans-serif;
     font-size: 20px;
+    width: 100%;
+    padding: 0 10%;
 }
 .new > h3 {
     padding-top: 10px;
