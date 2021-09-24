@@ -22,13 +22,13 @@
 .menu-details > a:hover {
     color: black;
 }
-img {
+.picture-product img {
     width: 38%;
     float: left;
     margin-left: 0.7%;
     margin-top: 0.7%;
 }
-img:first-child, img:nth-child(2) {
+.picture-product img:first-child, .picture-product img:nth-child(2) {
     margin-top: 0 !important;
 }
 
@@ -79,8 +79,9 @@ h5 {
     right: 1%;
     display: block;
     position: fixed;
-    top: 16%;
+    top: 50%;
     width: 20%;
+    z-index: 0;
 }
 .shopping {
     width: 100%;
@@ -199,7 +200,7 @@ h5 {
         font-size: 15px;
     }
     .accordion-items {
-        top: 20%;
+        top: 50%;
         right: 1%;
     }
     button.shopping {

@@ -53,18 +53,21 @@ div.text-item-1 {
 .collection-item-2 {
     display: flex;
     padding: 30px 0 0 0;
+    align-items: center;
 }
 
 .text-item-2 {
+    display: block;
     text-align: center;
-    padding: 7%;
+    padding: 0 5%;
+    width: 40%;
 }
 .text-item-2 h1 {
     font-size: 35px;
 }
 .text-item-2 p {
-    padding-top: 20px;
     font-size: 20px;
+    margin: 0;
 }
 .collection-1, .collection-2 {
     display: flex;
@@ -87,7 +90,9 @@ div.text-item-1 {
 .collection-1 > div p, .collection-2 > div p {
     font-size: 20px;
 }
-.button-holiday input {
+.button-holiday input, 
+.button-collection input,
+.button-anniversary input {
     background-color: transparent;
     padding: 10px 30px;
     font-size: 20px;
@@ -99,7 +104,18 @@ div.text-item-1 {
     border-radius: 5px;
     color: white;
 }
-.button-holiday input:hover {
+.button-holiday input, .button-anniversary input {
+    position: absolute;
+}
+.button-anniversary input {
+    top: 50%;
+}
+.button-anniversary input {
+    
+}
+.button-holiday input:hover,
+.button-collection input:hover,
+.button-anniversary input:hover {
     background-color: white;
     color: black;
     border: none;
@@ -199,11 +215,12 @@ div.text-item-1 {
 }
 .banner-holiday img {
     width: 100%;
+    position: relative;
 }
 .container-holiday {
     position: absolute;
     width: 40%;
-    top: 25%;
+    bottom: 25%;
     color: white;
     margin-left: 5%;
     text-shadow: 1px 1px 1px black;
@@ -229,7 +246,7 @@ div.text-item-1 {
     width: 100%;
     margin-top: 5px;
 }
-.text-anniversary {
+/*.text-anniversary {
     position: absolute;
     top: 40%;
     color: white;
@@ -242,4 +259,4 @@ div.text-item-1 {
 }
 .text-anniversary p {
     font-size: 20px;
-}
+}*/

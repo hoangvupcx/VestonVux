@@ -1,4 +1,10 @@
 $(document).ready(function() {
+
+    $('#toggle').click(function() {
+        $('nav > ul.menu').slideToggle()
+        $('.accordion').hide("slow")
+    })
+
     $("body .body-product:first-child").addClass("wow animate__fadeInLeft")
     $("body .body-product:last-child").addClass("wow animate__fadeInRight")
     $("body .body-product:nth-child(2)").addClass("wow animate__fadeInUp")
@@ -17,7 +23,7 @@ $(document).ready(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() >= $(".picture-product img:last-child").prop('offsetTop') || $(this).scrollTop() < 0)
         $('.accordion').hide("slow")
-        else
+        else if ($(this).scrollTop() >= $("nav ul.menu li:nth-child(5)").prop('offsetTop'))
         $('.accordion').show("slow")
     })
 
@@ -50,5 +56,7 @@ $(document).ready(function() {
         $(this).parent().toggleClass('active');
         $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
     })
+
+
 });
 
