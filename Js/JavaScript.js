@@ -25,6 +25,8 @@ $(document).ready(function() {
         $('.accordion').hide("slow")
         else if ($(this).scrollTop() >= $("nav ul.menu li:nth-child(5)").prop('offsetTop'))
         $('.accordion').show("slow")
+        else 
+        $('.accordion').hide("slow")
     })
 
     $(window).scroll(function(event) {

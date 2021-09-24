@@ -38,7 +38,7 @@ div.header-about > p {
     text-align: center !important;
     background: black;
 }
-.content img {
+img {
     width: 50%;
     height: auto;
     float: left;
@@ -189,7 +189,6 @@ form {
     justify-content: left;
 }
 li, .book-appointment {
-    text-align: left;
     padding: 0;
 }
 .button-about {
@@ -391,7 +390,7 @@ option {
         display: none;
     }
     .hidden-img2 {
-        width: 100%;
+        width: 100% !important;
         float: none;
         padding-bottom: 0;
     }
