@@ -262,7 +262,7 @@ div.text-product p:first-child {
     .text-item-2 p {
         font-size: 12px !important;
     }
-    .suits-wrapper video, .blazers-wrapper img, .collection-item-2{
+    .suits-wrapper video, .blazers-wrapper img, .production-item-2{
         margin-bottom: 20px !important;
     }
 }
@@ -331,6 +331,9 @@ div.text-product p:first-child {
     .content-none {
         display: none;
     }
+    .text-item-2 p {
+        font-size: 7px !important;
+    }
 }
 
 @media screen and (max-width: 360px) /*500%*/ {
@@ -353,6 +356,9 @@ div.text-product p:first-child {
         margin-top: 10px;
     }
     .text-item-2 h2 {
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .text-item-2 p {
+        font-size: 7px !important;
     }
 }

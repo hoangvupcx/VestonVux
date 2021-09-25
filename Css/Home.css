@@ -4,23 +4,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Mallanna&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Mallanna&display=swap');
-/*----------------------------Home-----------------------------*/
+/*------------------------------------------------------Home-------------------------------------------------------*/
 *{
     box-sizing: border-box;
     font-family: Questrial, sans-serif;
     padding: 0;
     margin: 0;
 }
+/*------------------------------logo----------------------------*/
 .vestonvux {
     background-color: black !important;
     text-align: center !important;
     position: relative;
 }
 .vestonvux img {
-    width: 20%;
+    width: 25%;
     margin: 10px 0;
     float: none;
 }
+
+
+
+
+/*------------------------------Menu----------------------------*/
 .menu {
     display: flex;
     background-color: black;
@@ -34,7 +40,7 @@
     margin: 0 auto;
     justify-content: center;
 }
-.menu> li > a {
+.menu > li > a {
     color: rgb(213, 213, 213);
     font-size: 30px;
     text-decoration: none;
@@ -43,7 +49,6 @@
     letter-spacing: 1px;
     text-decoration: none;
     transition: all 1s;
-    z-index: 100000000;
 }
 ul.menu > li > a:hover {
     color: rgb(221, 29, 29);
@@ -58,7 +63,38 @@ ul.menu > li > a:hover {
     font-size: 20px;
     cursor: pointer;
 }
-/*demo1*/
+
+
+/*---------------Header Top Bar-------------------*/
+.header-topbar {
+    display: flex;
+    background-color: black;
+    list-style-type: none;
+    margin-bottom: 0;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    height: 60px;
+}
+.header-topbar > li:first-child{
+    margin-right: auto;
+}
+.header-topbar > li > a {
+    color: rgb(213, 213, 213);
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 1s; 
+}
+ul.header-topbar > li > a:hover {
+    color: rgb(221, 29, 29);
+    transform: scale(1.2) !important;
+}
+
+
+/*---------------------------demo1--------------------------*/
 .start-demo1 h4, .start-demo2 h4 {
     text-align: center;
     font-size: 35px;
@@ -99,14 +135,20 @@ ul.menu > li > a:hover {
     color: #000;
 }
 
-/*demo2*/
+
+
+/*-----------------------------demo2------------------------------*/
 .start-demo2 {
     float: right;
     margin: 2.5% 10% 0 10%;
     width: 30%;
 }
 
-/*demo3*/
+
+
+
+
+/*-----------------------------demo3-------------------------------*/
 .slider {
     background-color: #f3f3f3;
     padding: 12px;
@@ -164,7 +206,7 @@ ul.menu > li > a:hover {
 
 
 
-/*Collection*/
+/*---------------------------------Collection--------------------------*/
 .collection-banner {
     position: relative;
 }
@@ -241,14 +283,14 @@ ul.menu > li > a:hover {
     opacity: 1 !important;
     transition: 0.25s ease-in;
 }
-/*----------------------------End Home-----------------------------*/
+/*-----------------------------------------------------------End Home-------------------------------------------------*/
 
 
 
 
 
 
-
+/*-----------------------------------------------------------Add to bag-------------------------------------------------------*/
 .product-1 {
     position: relative;
 }
@@ -270,7 +312,7 @@ ul.menu > li > a:hover {
 
 
 
-/*------------------------------Contact--------------------------------*/
+/*--------------------------------------------------------------Contact-------------------------------------------------------*/
 div.header {
     width: 100%;
     height: 500px;
@@ -375,12 +417,12 @@ input.button:hover {
     border-color: #f33a58 !important;
     font-family: Questrial, sans-serif;
 }
-/*------------------------------End Contact--------------------------------*/
+/*-----------------------------------------------------------End Contact---------------------------------------------------------*/
 
 
 
 
-/*-------------------------------Button Go-to-top-------------------------*/
+/*---------------------------------------------------------Button Go-to-top----------------------------------------------*/
 .gotop {
     display: flex;
     position: fixed;
@@ -409,11 +451,11 @@ input.button:hover {
     visibility: visible;
     opacity: 1;
 }
-/*-------------------------------Button Go-to-top-------------------------*/
+/*---------------------------------------------------------Button Go-to-top-------------------------------------------------*/
 
 
 
-/*--------------------------Search Box------------------*/
+/*-------------------------------------------------------------Search Box--------------------------------------------------*/
 .search-box {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -454,9 +496,14 @@ input.button:hover {
     justify-content: center;
     cursor: pointer;
 }
+/*--------------------------------------------------------End Search Box-----------------------------------------------------*/
 
 
-/*--------------------------------Carousel------------------------------*/
+
+
+
+
+/*-----------------------------------------------------------Carousel-------------------------------------------------------*/
 .carousel-inner img {
     width: 100%;
     align-content: center;
@@ -507,13 +554,13 @@ input.button:hover {
     clear: left;
     margin: revert;
 }
-/*--------------------------------End Carousel------------------------------*/
+/*--------------------------------------------------------------End Carousel-----------------------------------------------*/
 
 
 
 
 
-/*-------------------------NEWLETTER--------------------------*/
+/*----------------------------------------------------------------NEWLETTER----------------------------------------------*/
 .newletter {
     text-align: center !important;
     clear: left;
@@ -578,14 +625,14 @@ div.form-content span {
     border-color: #f33a58;
     font-family: Questrial, sans-serif;
 }
-/*-------------------------End NEWLETTER--------------------------*/
+/*------------------------------------------------------End NEWLETTER-------------------------------------------------------*/
 
 
 
 
-/*-------------------------Footer---------------------------- */
+/*----------------------------------------------------------Footer------------------------------------------------ */
 .footer {
-    background-color: #3f3f3f;
+    background-color: #181818;
 	color: #d5d5d5;
     font-family: Questrial, sans-serif;
     font-size: 26px;
@@ -660,7 +707,7 @@ div.item-footer p {
 .fa-youtube {
 	color: #bb0000;
 }
-/*-------------------------End Footer---------------------------- */
+/*----------------------------------------------------------End Footer--------------------------------------------------- */
 
 
 
@@ -680,8 +727,21 @@ div.item-footer p {
 
 
 
-/*------------------------MEDIA QUERY------------------------------*/
+/*------------------------------------------------------MEDIA QUERY---------------------------------------------------------*/
 @media screen and (max-width: 1050px) /*150%*/ {
+    /*--------------Header top bar---------------*/
+    .header-topbar {
+        height: 40px !important;
+    }
+    .header-topbar > li > a {
+        font-size: 15px !important;
+        padding: 10px !important;
+    }
+
+
+
+
+
     /*--------------Search box---------------*/
     .search-btn {
         width: 25px;
@@ -985,6 +1045,18 @@ div.item-footer p {
     }
 }
 @media screen and (max-width: 750px) /*250%*/ {
+    /*--------------Header top bar---------------*/
+    .header-topbar {
+        height: 20px !important;
+    }
+    .header-topbar > li > a {
+        font-size: 10px !important;
+        padding: 8px !important;
+    }
+
+
+
+
     /*---------------Newletter---------------*/
     .inputEmail, .submit {
        width: 250px;
@@ -1371,6 +1443,14 @@ div.item-footer p {
     }
 }
 @media screen and (max-width: 450px) /*400%*/ {
+    /*--------------Header top bar---------------*/
+    .header-topbar > li > a {
+        font-size: 8px !important;
+        padding: 5px !important;
+    }
+
+
+
     /*---------------Newletter---------------*/
     .inputEmail, .submit {
         width: 150px;
@@ -1505,6 +1585,14 @@ div.item-footer p {
     }
 }
 @media screen and (max-width: 360px) /*500%*/ {
+    /*--------------Header top bar---------------*/
+    .header-topbar > li > a {
+        font-size: 7px !important;
+        padding: 4px !important;
+    }
+
+
+
     /*---------------Newletter---------------*/
     .inputEmail, .submit {
         width: 130px;
@@ -1607,4 +1695,4 @@ div.item-footer p {
         margin: revert;
     }
 }
-/*------------------------END MEDIA QUERY------------------------------*/
+/*-----------------------------------------------------END MEDIA QUERY-------------------------------------------------*/
