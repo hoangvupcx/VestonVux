@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $('#toggle').click(function() {
         $('nav > ul.menu').slideToggle()
-        $('.accordion').hide("slow")
+        // $('.accordion').hide("slow")
     })
 
     $('.search-toggle').click(function() {

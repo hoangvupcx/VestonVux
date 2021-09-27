@@ -1491,7 +1491,6 @@ div.item-footer p {
         font-size: 10px !important;
         width: 150px !important;
         height: 1rem !important;
-        border-bottom: 1px solid rgb(170, 168, 168);
     }
     .search:hover {
         border-bottom: 1.25px solid rgb(221, 29, 29) !important;
