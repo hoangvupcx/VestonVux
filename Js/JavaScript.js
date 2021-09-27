@@ -5,6 +5,14 @@ $(document).ready(function() {
         $('.accordion').hide("slow")
     })
 
+    $('.search-toggle').click(function() {
+        $('.search-box').slideToggle()
+    })
+
+    $('.login-and-register').click(function() {
+        $('.login-register').slideToggle()
+    })
+
     $("body .body-product:first-child").addClass("wow animate__fadeInLeft")
     $("body .body-product:last-child").addClass("wow animate__fadeInRight")
     $("body .body-product:nth-child(2)").addClass("wow animate__fadeInUp")
@@ -18,16 +26,18 @@ $(document).ready(function() {
             mobile:       true,       // default
             live:         true        // default
         })
-      wow.init();
+    wow.init();
 
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= $(".picture-product img:last-child").prop('offsetTop') || $(this).scrollTop() < 0)
+      
+
+    /*$(window).scroll(function() {
+        if ($(this).scrollTop() >= $(".picture-product img:last-child").prop('offsetTop') || $(this).scrollTop() <= 0)
         $('.accordion').hide("slow")
-        else if ($(this).scrollTop() >= $("nav ul.menu li:nth-child(5)").prop('offsetTop'))
+        else if ($(this).scrollTop() >= $(".menu-details").prop('offsetTop'))
         $('.accordion').show("slow")
         else 
         $('.accordion').hide("slow")
-    })
+    })*/
 
     $(window).scroll(function(event) {
         var pos_body = $('html,body').scrollTop();
@@ -36,12 +46,6 @@ $(document).ready(function() {
         }
         else{
             $('.gotop').removeClass('hien-ra');
-        }
-        if(pos_body<2000){
-            $('.accordion').addClass('hien-ra');
-        }
-        else{
-            $('.accordion').removeClass('hien-ra');
         }
     });
 
