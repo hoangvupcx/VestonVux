@@ -29,6 +29,7 @@ body {
     position: absolute;
     margin-left: 5%;
     text-align: justify;
+    z-index: 1000;
 }
 .text-the-magazine h1 {
     letter-spacing: 5px;
@@ -41,13 +42,13 @@ body {
 .the-mural {
     color: white;
     text-align: center;
-    padding: 10px;
 }
 .the-mural img {
     width: 100%;
 }
 .text-the-mural {
     margin: 4.5%;
+    padding: 10px;
 }
 .text-the-mural p {
     font-size: 20px;
@@ -59,6 +60,29 @@ body {
 .text-the-show {
     position: absolute;
     bottom: 10%;
+    width: 100%;
+}
+.the-earth {
+    display: flex;
+    color: white;
+    text-align: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.the-earth > img {
+    width: 50%;
+}
+.text-the-earth {
+    padding: 0 2vw 0 10vw;
+    width: 50%;
+}
+.text-the-earth img {
+    width: 100%;
+    margin-bottom: 50px;
+}
+.text-the-earth p {
+    font-size: 20px;
+    line-height: 30px;
 }
 
 @media screen and (max-width: 1050px) /*150%*/ {
@@ -82,6 +106,12 @@ body {
     .text-the-show {
         bottom: 7%;
     }
+    .text-the-earth img {
+        margin-bottom: 40px;
+    }
+    .text-the-earth p {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 800px) /*200%*/ {
@@ -103,6 +133,16 @@ body {
     .text-the-magazine h4 {
         font-size: 17px;
     }
+    .text-the-earth {
+        padding: 7%;
+    }
+    .text-the-earth img {
+        margin-bottom: 30px;
+    }
+    .text-the-earth p {
+        font-size: 15px;
+        line-height: 20px;
+    }
 }
 
 @media screen and (max-width: 750px) /*250%*/ {
@@ -123,6 +163,17 @@ body {
     }
     .text-the-magazine h4 {
         font-size: 15px;
+    }
+    .text-the-earth {
+        padding: 5%;
+    }
+    .text-the-earth img {
+        margin-bottom: 20px;
+    }
+    .text-the-earth p {
+        line-height: 15px;
+        font-size: 12px;
+        margin-bottom: 0;
     }
 }
 
@@ -156,6 +207,16 @@ body {
     .text-the-show {
         bottom: 5%;
     }
+    .text-the-earth {
+        padding: 4%;
+    }
+    .text-the-earth img {
+        margin-bottom: 20px;
+    }
+    .text-the-earth p {
+        line-height: 15px;
+        font-size: 10px;
+    }   
 }
 
 @media screen and (max-width: 450px) /*400%*/ {
@@ -188,6 +249,16 @@ body {
         padding: 5px !important ;
         border: 0.5px solid white !important;
     }
+    .text-the-earth {
+        padding: 3%;
+    }
+    .text-the-earth img {
+        margin-bottom: 10px;
+    }
+    .text-the-earth p {
+        line-height: 12px;
+        font-size: 8px;
+    }   
 }
 
 @media screen and (max-width: 360px) /*500%*/ {
@@ -212,4 +283,11 @@ body {
     .text-the-magazine h4, .button-collection input {
         font-size: 8px !important;
     }
+    .text-the-earth {
+        padding: 5%;
+    }
+    .text-the-earth p {
+        line-height: 10px;
+        font-size: 8px;
+    }   
 }

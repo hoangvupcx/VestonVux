@@ -18,6 +18,8 @@ $(document).ready(function() {
     $("body .body-product:nth-child(2)").addClass("wow animate__fadeInUp")
     $("body .product-item:nth-child(even) > div").addClass("wow animate__fadeInRight")
     $("body .product-item:nth-child(odd) > div").addClass("wow animate__fadeInLeft")
+    $("body ul.menu li a").addClass("wow animate__backInUp")
+    
     wow = new WOW(
         {
             boxClass:     'wow',      // default

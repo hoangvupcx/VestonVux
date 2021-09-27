@@ -268,6 +268,44 @@ div.text-item-1 {
 
 
 
+
+/*----------------------New season-------------------------*/
+.new-season {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+.text-new-season {
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+    width: 100%;
+}
+.text-new-season h1 {
+    margin: 0;
+    text-shadow: 2px 2px 5px white;
+}
+
+
+.text-new-season-products {
+    position: absolute;
+    bottom: 20%;
+    text-align: center;
+    width: 100%;
+}
+.text-new-season-products h1 {
+    margin: 0;
+    font-size: 60px;
+    text-shadow: 2px 2px 5px white;
+}
+.button-new-season input {
+    padding: 10px;
+    font-size: 30px;
+    width: 400px !important;
+}
+
+
+
 /*------------------------MEDIA QUERY------------------------------*/
 @media screen and (max-width: 1050px) /*150%*/  {
     .button-holiday input {
@@ -277,7 +315,7 @@ div.text-item-1 {
     }
 }
 @media screen and (max-width: 800px) /*200%*/ {
-    .caption-collection h1 {
+    .caption-collection h1, .text-new-season h1 {
         font-size: 30px;
     }
     .caption-collection p {
@@ -297,10 +335,22 @@ div.text-item-1 {
         padding: 10px 20px;
         font-size: 15px;
     }
+    .text-new-season-products {
+        bottom: 15%;
+    }
+    .text-new-season-products h1 {
+        font-size: 35px !important;
+    }
+    .button-new-season input {
+        padding: 8px;
+        font-size: 20px;
+        width: 300px !important;
+    }
+    
 }
 
 @media screen and (max-width: 750px) /*250%*/ {
-    .caption-collection h1 {
+    .caption-collection h1, .text-new-season h1 {
         font-size: 25px;
     }
     .caption-collection p {
@@ -312,10 +362,20 @@ div.text-item-1 {
         padding: 10px 15px;
         font-size: 12px;
     }
+    .text-new-season-products {
+        bottom: 10%;
+    }
+    .text-new-season-products h1 {
+        font-size: 30px !important;
+    }
+    .button-new-season input {
+        font-size: 15px;
+        width: 250px !important;
+    }
 }
 
 @media screen and (max-width: 600px) /*300%*/ {
-    .caption-collection h1 {
+    .caption-collection h1, .text-new-season h1 {
         font-size: 20px;
         letter-spacing: 2px !important;
     }
@@ -338,11 +398,23 @@ div.text-item-1 {
         font-size: 10px;
         border: 1px solid white;
     }
+    .text-new-season-products {
+        bottom: 10%;
+    }
+    .text-new-season-products h1 {
+        font-size: 25px !important;
+    }
+    .button-new-season input {
+        margin-top: 10px !important;
+        padding: 5px;
+        font-size: 12px;
+        width: 180px !important;
+    }
     
 }
 
 @media screen and (max-width: 450px) /*400%*/ {
-    .caption-collection h1 {
+    .caption-collection h1, .text-new-season h1 {
         font-size: 18px;
     }
     .caption-collection p {
@@ -351,13 +423,24 @@ div.text-item-1 {
     .button-collection input {
         margin-top: 10px;
         font-size: 10px;
-        padding: 8px 0px;
+        padding: 5px 0px;
         width: 130px !important;
     }
     .button-holiday input {
         width: 130px !important;
         padding: 5px 10px;
         font-size: 10px;
+    }
+    .text-new-season input {
+        margin-top: 10px;
+    }
+    .text-new-season-products h1 {
+        font-size: 20px !important;
+    }
+    .button-new-season input {
+        padding: 5px;
+        font-size: 10px;
+        width: 150px !important;
     }
 }
 
