@@ -66,8 +66,11 @@ h5 {
 .text-product > div {
     display: inline-block;
 }
+.picture-product {
+    width: 100%;
+}
 .accordion {
-    width: 60%;
+    width: 40%;
     margin-right: 0.7%;
 }
 .accordion-header {
