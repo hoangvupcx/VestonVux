@@ -191,7 +191,7 @@
             errorSelector: '.form-message',
             rules: [
                 Validator.isEmail('#email', 'Please enter a valid email address.'),
-                Validator.minLength('#password', 6),
+                Validator.minLength('#password', 8),
             ],
             onSubmit: function (data) {
               // Call API

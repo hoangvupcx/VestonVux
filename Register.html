@@ -180,26 +180,11 @@
                 return document.querySelector('#form-register #email').value;
               }, 'Does not match email'),
               Validator.isRequired('#password'),
-              Validator.minLength('#password', 6),
+              Validator.minLength('#password', 8),
               Validator.isRequired('#password_confirmation'),
               Validator.isConfirmed('#password_confirmation', function () {
                 return document.querySelector('#form-register #password').value;
               }, 'Does not match password')
-            ],
-            onSubmit: function (data) {
-              // Call API
-              console.log(data);
-            }
-          });
-  
-  
-          Validator({
-            form: '#form-2',
-            formGroupSelector: '.form-group',
-            errorSelector: '.form-message',
-            rules: [
-              Validator.isEmail('#email'),
-              Validator.minLength('#password', 6),
             ],
             onSubmit: function (data) {
               // Call API
