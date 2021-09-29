@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -18,7 +17,10 @@
     <link rel="stylesheet" href="./Css/Collection.css">
     <link rel="shortcut icon" href="./images/images/LOGO VESTONVUX-04.png">
     <script src="./Js/JavaScript.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    
 </head>
 <body>
     <!-----------------Navigation---------------->
@@ -51,12 +53,36 @@
 
     <div class="search-box">
         <div class="search">
-            <input type="text" id="" placeholder="Search...">
-            <i class="fas fa-search search-icon"></i>
-            <span class="form-erro"></span>
+            <i style="margin: 0 10px" class="fas fa-search search-icon" id="btnSearch" data-toggle="modal" data-target="#myModal"></i>
+            <input type="text" id="kw" placeholder="Search...">
+            <span class="clear" onclick="document.getElementById('kw').value = ''"></span>
         </div>
     </div>
-
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Search Results </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Your Search in this box will be shown by the Dark-Gray color
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
 
     <div class="login-register">
         <a href="./Login.html"><input type="button" value="Login"></a>
@@ -142,7 +168,7 @@
             <p>A volume containing photographs by Angelo Mereu has also been created for the occasion, curating black and white records of all the murals on via Broletto from 1984 to the present day.</p>
             <p>The book is on sale exclusively at VestonVux.com and at VestonVux/Silos and VestonVux/Libri.</p>
             <div class="button-collection">
-                <a href="./Wedding.html"><input type="button" value="PRE-ORDER NOW" style="margin-top: 10px; width: 250px;"></a>
+                <a href="./Sale.html"><input type="button" value="PRE-ORDER NOW" style="margin-top: 10px; width: 250px;"></a>
             </div>
         </div>
         <img class="wow animate__fadeInRight" src="https://mediacdn.livestory.io/v1/armani/posts/r1450/61409816a40dc3000a4f6c11.jpg" alt="">
@@ -153,7 +179,7 @@
             <img src="./images/images/LOGO VESTONVUX-07.png" alt="">
             <p>VestonVux is celebrating its 40th anniversary with a series of special events and initiatives showcasing the brand’s democratic, dynamic spirit. Since 1981, the label has been observing urban lifestyles and interpreting them with a modern, inclusive attitude.</p>
             <div class="button-collection">
-                <a href="./Wedding.html"><input type="button" value="DISCOVER MORE" style="width: 250px;"></a>
+                <a href="./index.html"><input type="button" value="DISCOVER MORE" style="width: 250px;"></a>
             </div>
         </div>
         <img class="wow animate__fadeInRight" src="./images/images/the earth.jpg" alt="">
@@ -237,5 +263,7 @@
                 <h5> Copyright &copy; VESTONVUX</h5>
         </div>
     </footer>
+
+    
 </body>
 </html>

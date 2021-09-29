@@ -13,6 +13,7 @@
     <title>VestonVux | New | 4 cm (16”) silk blade tie</title>
     <link rel="stylesheet" href="./Css/Home.css">    
     <link rel="shortcut icon" href="./images/images/LOGO VESTONVUX-04.png">
+
     <link rel="stylesheet" href="./Css/Products.css">
     <link rel="stylesheet" href="./Css/Items-Product.css">
     <link rel="stylesheet" href="./Css/Collection.css">
@@ -56,9 +57,34 @@
 
     <div class="search-box">
         <div class="search">
-            <input type="text" id="" placeholder="Search...">
-            <i class="fas fa-search search-icon"></i>
-            <span class="form-erro"></span>
+            <i style="margin: 0 10px" class="fas fa-search search-icon" id="btnSearch" data-toggle="modal" data-target="#myModal"></i>
+            <input type="text" id="kw" placeholder="Search...">
+            <span class="clear" onclick="document.getElementById('kw').value = ''"></span>
+        </div>
+    </div>
+    
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+        
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Search Results </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+        
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Your Search in this box will be shown by the Dark-Gray color
+                </div>
+        
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+        
+            </div>
         </div>
     </div>
 

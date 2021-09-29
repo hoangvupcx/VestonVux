@@ -65,6 +65,12 @@ $(document).ready(function() {
         $(this).parent().children('.accordion-body1').slideToggle(); // Từ header tìm về cha (item) rồi đưa về con (body)
     })
 
+    $('#btnSearch').click(function() {
+        var k = $('#kw').val()
+        $(`div.text-product p:contains(${k})`).parent().parent().css("color", "red")
+        
+    })
+    
 
 });
 
