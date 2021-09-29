@@ -53,11 +53,11 @@ body {
 .text-the-mural p {
     font-size: 20px;
 }
-.show {
+.show-anniversary {
     position: relative;
     text-align: center;
 }
-.text-the-show {
+.text-the-show-anniversary {
     position: absolute;
     bottom: 10%;
     width: 100%;
@@ -103,7 +103,7 @@ body {
         font-size: 20px;
         margin-bottom: 0;
     }
-    .text-the-show {
+    .text-the-show-anniversary {
         bottom: 7%;
     }
     .text-the-earth img {
@@ -204,7 +204,7 @@ body {
     .text-the-magazine h4 {
         font-size: 10px;
     }
-    .text-the-show {
+    .text-the-show-anniversary {
         bottom: 5%;
     }
     .text-the-earth {
@@ -242,10 +242,10 @@ body {
     .button-collection input {
         font-size: 8px !important;
     }
-    .text-the-show {
+    .text-the-show-anniversary {
         bottom: 3%;
     }
-    .text-the-show input {
+    .text-the-show-anniversary input {
         padding: 5px !important ;
         border: 0.5px solid white !important;
     }

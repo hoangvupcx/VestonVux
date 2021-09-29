@@ -67,8 +67,8 @@ $(document).ready(function() {
 
     $('#btnSearch').click(function() {
         var k = $('#kw').val()
-        $(`div.text-product p:contains(${k})`).parent().parent().css("color", "red")
-        
+        $(`div.text-product p:contains(${k})`).parent().parent().css("background-color", "#d5d3cd")
+        $(`div.text-product pre:contains(${k})`).parent().parent().css("background-color", "#d5d3cd")
     })
     
 

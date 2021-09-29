@@ -126,31 +126,31 @@ div.text-item-1 {
     border: none;
     transform: scale(1.1);
 }
-.show {
+.show-anniversary {
     position: relative;
 }
-.show img {
+.show-anniversary img {
     width: 100%;
 }
-.caption-show-1st, .caption-show-2nd {
+.caption-show-anniversary-1st, .caption-show-anniversary-2nd {
     position: absolute;
     color: white;
     text-align: center;
     margin: 0 auto;
     width: 100%;
 }
-.caption-show-1st {
+.caption-show-anniversary-1st {
     top: 30%;
 }
-.show h1 {
+.show-anniversary h1 {
     font-size: 80px;
     margin: 0;
     letter-spacing: -4px;
 }
-.show h3 {
+.show-anniversary h3 {
     font-size: 40px;    
 }
-.caption-show-2nd {
+.caption-show-anniversary-2nd {
     top: 60%;
 }
 .spacer {
